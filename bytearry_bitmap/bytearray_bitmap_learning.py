@@ -1,10 +1,14 @@
+# a file helped me to learning the basic structure of bytearray in micropython
+# tested on pi pico w, ssd 1306
+# micropython documentation sucks
+
+# MONO_HLSB: 1 pixel = 1 bit; 0xFF = 8 pixels is ON (depenends on the display mode)
+# for compatibility, considering image2cpp, bitmap_d below is the best way to draw bitmap
+
+
 from machine import Pin, I2C
 from ssd1306 import SSD1306_I2C
 import framebuf # it is actually included in ssd1306
-
-# micropython documentation sucks
-# MONO_HLSB: 1 pixel = 1 bit; 0xFF = 8 pixels is ON (depenends on the display mode)
-# for compatibility, considering image2cpp, bitmap_d below is the best way to draw bitmap
 
 # i2c config from machine module
 i2c = I2C(0, scl=Pin(13), sda=Pin(12), freq=400000)
