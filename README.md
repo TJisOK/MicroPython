@@ -2,11 +2,12 @@
 ## Snake 
 ### A project:
 
-**1. handlle a bit of i/o**  
+**1. handle a bit of i/o**  
 - To learn MicroPython based on a game play rig
 
 - To test raspberry pi running MicroPython  
 <br>
+
 **2. learn a bit of coding**
 - How is uPy different from Arduino Environment  
 
